@@ -1,0 +1,21 @@
+public class MethodHiding {
+	public static void method1() {
+		System.out.println("m1 parent class");
+	}
+}
+class MH2 extends MethodHiding{
+	public static void method1() {
+		System.out.println("m1 child class");
+	}
+	public static void main(String[] args) {
+		MethodHiding m1=new MH2();
+		m1.method1();
+		
+		MethodHiding m2=new MethodHiding();
+		m2.method1();
+		
+		MH2 m3=new MH2();
+		m3.method1();
+	}
+	
+	}
