@@ -7,6 +7,7 @@ public static void main(String[] args) {
 		map.put(0, "Basics");
 		map.put(1, "Strong");
 		map.put(0,"Tech");
+	//	map.put(null,null);
 		System.out.println(map);
 		//map.remove(1);
 		
